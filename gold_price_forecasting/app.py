@@ -108,6 +108,7 @@ st.sidebar.caption("Order defaults to the model chosen by BIC in the notebook.")
 
 # ---------------------------------------------------------------- main
 st.title("🪙 Gold Price Forecaster - ₹ per gram")
+st.link_button("Deploy this app on Streamlit", "https://share.streamlit.io/deploy?repository=priyanshumodak%2Fatsa-gold-price-forecasting&branch=main&mainModule=streamlit_app.py", type="primary")
 st.caption("ATSA mini project | 18K, 20K, 22K and 24K gold | Indian rupees per gram")
 st.info("Estimated gold metal value from COMEX futures. Excludes GST, import duties, making charges and local premiums; jeweller prices will differ.")
 
