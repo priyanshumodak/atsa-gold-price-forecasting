@@ -1,0 +1,6 @@
+test,p-value,reading
+"Ljung-Box (resid), lag 10",0.0839682035393837,pass
+"Ljung-Box (resid), lag 20",0.0005888919789503217,FAIL (assumption violated)
+"Ljung-Box (resid²), lag 10",4.395986593446053e-71,FAIL (assumption violated)
+"ARCH-LM, 10 lags",6.279189667192698e-45,FAIL (assumption violated)
+Jarque-Bera (normality),0.0,FAIL (assumption violated)

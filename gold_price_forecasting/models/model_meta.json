@@ -1,0 +1,19 @@
+{
+  "ticker": "GC=F",
+  "data_source": "Yahoo Finance live (GC=F)",
+  "order": [
+    0,
+    1,
+    0
+  ],
+  "trend": "t",
+  "training_ticker": "GC=F",
+  "trained_until": "2026-10-26",
+  "n_obs": 3082,
+  "test_days": 100,
+  "test_end": "2026-10-26",
+  "test_rmse_model": 60.67228044273187,
+  "test_rmse_naive": 60.5337032070076,
+  "test_mape_model": 1.077755806047771,
+  "test_mape_naive": 1.0762885403989217
+}

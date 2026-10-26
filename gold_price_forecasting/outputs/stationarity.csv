@@ -1,0 +1,4 @@
+series,ADF stat,ADF p,KPSS stat,KPSS p,verdict
+Price,0.262,0.9755,6.6929,0.01,non-stationary
+Log price,0.694,0.9897,7.9639,0.01,non-stationary
+Log return (d=1),-14.4617,0.0,0.2149,0.1,stationary

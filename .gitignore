@@ -1,0 +1,17 @@
+.venv/
+.python/
+.uv-cache/
+__pycache__/
+.ipynb_checkpoints/
+
+.ipython/
+.jupyter_runtime/
+.yf_cache/
+*.log
+
+.vscode/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+gold_price_prediction_project.zip
