@@ -43,3 +43,21 @@ Yahoo Finance ticker `GC=F` is COMEX gold futures in USD per troy ounce, not Ind
 BIC selects an ARIMA model on training data. The final 100 business days are held out for evaluation against naive and seasonal models. One-step updated forecasts and fixed-origin multi-step forecasts answer different questions and are shown separately. The final model is refitted to all observations. Exponentiated log predictions are medians; GARCH normal-quantile bands are approximate. Business weekdays include some exchange holidays, filled with the last known price. Do not claim that ARIMA beats the baseline until the measured results support it.
 
 Team: Priyanshu Modak (I080), Vishesh Dokania (I019), Parth Zanwar (I074). Interpret your actual results and include an honest assistance disclosure. The supplied course PDF describes a real-world mini project for teams of 2-3 and states a 10% GenAI limit with references; check how that applies with faculty before submission. This project was prepared with AI assistance.
+
+## Rupees per gram and karat options
+
+The app displays INR per gram for 18K (750), 20K (833), 22K (916) and
+24K fine gold (999). The latest available Yahoo Finance `INR=X` exchange rate
+is fetched, with a dated saved snapshot for offline use and a manual override.
+
+Conversion: USD per troy ounce x INR per USD / 31.1034768 x fineness.
+The selected rate is held fixed across history and forecasts. Thus the chart
+revalues past USD prices at that rate; it is not a historical INR-price series.
+Forecast intervals exclude future FX uncertainty. The underlying model remains
+trained and evaluated in USD/oz, with its reported errors labeled accordingly.
+Charts, selected-purity forecasts and all-karat CSV downloads use INR per gram.
+These are futures-derived metal-value estimates; GST, import duties, making
+charges and local premiums are excluded.
+
+References: https://lims.bis.gov.in/home/search_is_number/?is_number__doc_no=1417
+and https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8
