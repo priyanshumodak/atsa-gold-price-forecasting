@@ -1,0 +1,27 @@
+id,scenario,expected,evidence
+D01,"Default 24K, 10y, 30 days, order 0/1/0",Forecast and ordered bounds,Verified UI path
+D02,Switch every karat,Only fineness scale changes,Verified all four
+D03,Manual FX=100,USD/oz *100 /31.1034768 *fineness,Verified arithmetic
+D04,d=2,No deterministic trend fit; inspect shape,Earlier smoke test verified
+D05,Horizon 5 vs 60,Check row counts and uncertainty,Demo plan
+D06,History 3 vs 15,Different sample and refit,Demo plan
+D07,Order 1/1/0,AR structure in returns,Demo plan
+D08,Order 0/1/1,MA innovations in returns,Demo plan
+D09,Order 1/1/1,ARMA in returns,Demo plan
+D10,Order 5/2/5,May be slow/warn/fail,Stress plan; no success claim
+D11,"Gold live unavailable, cache present",Label cached real data,Mocked outage verified
+D12,"FX live unavailable, snapshot present",Label saved rate/date,Mocked outage verified
+D13,No FX sources,Require positive manual FX,Code review only
+D14,No gold sources,Stop; no fake data,Code review only
+D15,CSV missing Date/Close,Reject required columns,Code review only
+D16,Malformed CSV dates,Invalid CSV message,Code review only
+D17,Invalid/zero/negative prices,Filter; require 100 remaining,Code review only
+D18,Duplicate/unsorted dates,Sort; keep last duplicate,Code review only
+D19,Fewer than 100 valid prices,Reject insufficient sample,Code review only
+D20,CSV is INR/g not USD/oz,Semantic mismatch cannot be inferred,Documented user contract
+D21,Selected-purity CSV,"Check units, karat and FX metadata",Code/UI review; inspect download in demo
+D22,All-purity CSV,Four forecast columns and FX,Code/UI review
+D23,Change order away from default,Hide archived RMSE,Code review
+D24,New live prices,Outputs may differ from snapshot,Expected behaviour
+D25,GitHub public access,Anonymous repo available,Verified remotely
+D26,Deployed app UI,Temporary deploy buttons absent; forecasts remain usable,User confirmed deployment; buttons removed

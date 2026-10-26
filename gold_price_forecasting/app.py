@@ -82,7 +82,6 @@ def fit_forecast(prices: pd.Series, order: tuple, horizon: int):
 
 
 # ---------------------------------------------------------------- sidebar
-st.sidebar.link_button("Deploy to Streamlit", "https://share.streamlit.io/deploy?repository=priyanshumodak%2Fatsa-gold-price-forecasting&branch=main&mainModule=streamlit_app.py", help="Open the deployment form for this GitHub project. Sign in with GitHub if prompted.")
 st.sidebar.header("Settings")
 ticker = "GC=F"
 karat = st.sidebar.selectbox("Gold purity", list(FINENESS), index=3)
@@ -108,7 +107,6 @@ st.sidebar.caption("Order defaults to the model chosen by BIC in the notebook.")
 
 # ---------------------------------------------------------------- main
 st.title("🪙 Gold Price Forecaster - ₹ per gram")
-st.link_button("Deploy this app on Streamlit", "https://share.streamlit.io/deploy?repository=priyanshumodak%2Fatsa-gold-price-forecasting&branch=main&mainModule=streamlit_app.py", type="primary")
 st.caption("ATSA mini project | 18K, 20K, 22K and 24K gold | Indian rupees per gram")
 st.info("Estimated gold metal value from COMEX futures. Excludes GST, import duties, making charges and local premiums; jeweller prices will differ.")
 

@@ -31,3 +31,7 @@ Local cloud-entry-point check:
 ```powershell
 .\.venv\Scripts\python.exe -m streamlit run streamlit_app.py
 ```
+
+## Professor presentation pack
+
+[PowerPoint with speaker notes](presentation/ATSA_Gold_Presentation.pptx), [slides PDF](presentation/ATSA_Gold_Presentation.pdf), and [full walkthrough](presentation/FULL_PROJECT_WALKTHROUGH.pdf) cover the actual results, code, demo, model combinations and 42 viva answers. See [pack contents](presentation/README.md).

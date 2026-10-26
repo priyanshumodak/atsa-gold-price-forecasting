@@ -15,3 +15,5 @@ __pycache__/
 !.env.example
 .streamlit/secrets.toml
 gold_price_prediction_project.zip
+
+ATSA_Professor_Presentation_Pack.zip
